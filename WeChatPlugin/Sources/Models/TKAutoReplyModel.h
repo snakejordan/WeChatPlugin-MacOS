@@ -16,6 +16,10 @@
 @property (nonatomic, assign) BOOL enableGroupReply;        /**<    是否开启群聊自动回复  */
 @property (nonatomic, assign) BOOL enableSingleReply;       /**<    是否开启私聊自动回复  */
 @property (nonatomic, assign) BOOL enableRegex;             /**<    是否开启正则匹配     */
+@property (nonatomic, assign) BOOL enableDelay;             /**<    是否开启延迟回复     */
+@property (nonatomic, assign) NSInteger delayTime;          /**<    延迟时间            */
+@property (nonatomic, assign) BOOL enableSpecificReply;     /**<    是否开启特定回复     */
+@property (nonatomic, strong) NSArray *specificContacts;    /**<    特定回复的联系人     */
 
 - (BOOL)hasEmptyKeywordOrReplyContent;
 
